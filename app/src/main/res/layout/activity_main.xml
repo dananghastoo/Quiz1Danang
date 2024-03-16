@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/namaapp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#52FA63"
+        android:textSize="25sp"
+        android:text="Danang Hasto Munandar Quiz 1"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pelanggan"
+        android:layout_width="match_parent"
+        android:textColor="#061698"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:layout_below="@+id/namaapp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/pelanggan">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold"/>
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silver"/>
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biasa"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/kodebarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#061698"
+        android:hint="Kode Barang"
+        android:layout_below="@+id/radiogroup"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/jumlahbarang"
+        android:layout_width="match_parent"
+        android:textColor="#12173E"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Barang"
+        android:layout_below="@+id/kodebarang"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btnmasuk"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jumlahbarang"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="30dp"
+        android:text="Masuk"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
